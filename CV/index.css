@@ -1,0 +1,128 @@
+
+
+
+body{
+    margin:0 ;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+   font-family: SegoeUI-Semibold, "Segoe UI Semibold", "Segoe UI Regular", "Segoe UI",sans-serif;
+
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(20,50px);
+    grid-auto-rows: 50px;
+    gap:20px;
+}
+
+
+/* profile photo container   */
+
+.cv-photo{
+ grid-row: 1 / span 5;
+ display: grid;
+ grid-template-columns: 1fr;
+ grid-template-rows: repeat(12,1fr);
+
+}
+
+.photo-profile-image{
+grid-row: 1 / 10;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.photo-profile-image img{
+width: 200px;
+}
+
+.photo-profile-name{
+grid-row: 10 / 12;
+background-color: grey;
+display: flex;
+align-items: flex-start;
+justify-content: center;
+color: #f6f6f6;
+z-index: 2;
+}
+
+.photo-profile-name p{
+font-size: 2rem;
+}
+
+.photo-profile-jobtitle{
+grid-row: 12 / 13;
+background-color: grey;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #f6f6f6;
+}
+
+.photo-profile-jobtitle p{
+    font-size: 1.5rem;
+    }
+
+
+/*profile description*/
+.cv-profile{
+    grid-row:  span 6;
+    background-color: bisque;
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows:repeat(auto-fill,minmax(3rem,1fr));
+}
+
+.profile-header{
+display: grid;
+grid-template-columns:  1fr 14fr;
+background-color: gray;
+align-items: center;
+}
+.profile-header .header-image{
+background-color: red;
+}
+.profile-header .header-image img{
+color:white;
+}
+
+.header-title{
+display: flex;
+justify-content: center;
+
+}
+
+
+
+
+
+
+/*cv-profile-skills*/
+
+.cv-skill{
+    background-color: bisque;
+    grid-row: span 7;
+}
+.cv-experience{
+    grid-row: span 7;
+
+}
+.cv-education{
+    grid-row: span 7;
+
+}
+.cv-certification{
+    grid-row: span 7;
+
+}
+.cv-references{
+
+    grid-row: span 7;
+
+}
+
