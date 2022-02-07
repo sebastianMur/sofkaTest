@@ -14,7 +14,7 @@ body{
 }
 *{
     box-sizing: border-box;
-   font-family: SegoeUI-Semibold, "Segoe UI Semibold", "Segoe UI Regular", "Segoe UI",sans-serif;
+   font-family: SegoeUI-Semibold, "Segoe UI Regular", "Segoe UI",sans-serif;
 }
 
 .container{
@@ -117,7 +117,7 @@ list-style-type: none;
 /* skill**/
 .cv-skill{
     overflow: auto;
-    grid-row: 7 / span 3;
+    grid-row: 7 / span 4;
     display: grid;
     grid-template-rows: repeat(12,1fr);
   }
@@ -141,7 +141,7 @@ list-style-type: none;
 /* EXPERIENCES**/
 .cv-experience{
     overflow-y: auto;
-    grid-row: 10 / span 5;
+    grid-row: 11 / span 5;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(12,1fr);
@@ -153,14 +153,33 @@ list-style-type: none;
     grid-template-columns: 1fr 13fr;
     background-color: var(--second-color);
 }
-
+.experience-jobtitle{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    }
+    .jobtitle-name{
+    grid-column: 1;
+    
+    }
+    .jobtitle-dates{
+        grid-column: 2;
+        color:firebrick;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .jobtitle-description{
+    grid-column: 1 / 3;
+    text-align: justify;
+    
+    }
 
 
 
 /* EDUCATION**/
 .cv-education{
     overflow-y: auto ;
-  grid-row: 15 / span 5;
+  grid-row: 16 / span 5;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(12,1fr);
@@ -173,10 +192,32 @@ list-style-type: none;
 }
 
 
+.education-degree{
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+    }
+    .degree-name{
+    grid-column: 1;
+    
+    }
+    .degree-dates{
+        grid-column: 2;
+        color:firebrick;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .degree-description{
+    grid-column: 1 / 3;
+    text-align: justify;
+    
+    }
+
+
+
 /* CERTIFICATES AND AWARDS**/
 .cv-certification{
     overflow-y:auto ;
-  grid-row:  20 / span 5;
+  grid-row:  21 / span 5;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(12,1fr);
@@ -187,10 +228,29 @@ list-style-type: none;
     grid-template-columns: 1fr 13fr;
 }
 
+.certification-certificate{
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+    }
+    .certificate-name{
+    grid-column: 1;
+    
+    }
+    .certificate-dates{
+        grid-column: 2;
+        color:firebrick;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .certificate-description{
+    grid-column: 1 / 3;
+    text-align: justify;
+    
+    }
 
 /* REFERENCES**/
 .cv-references{
-  grid-row: 25 / span 5;
+  grid-row: 26 / span 5;
   overflow-y: auto;
   display: grid;
   grid-template-columns: 1fr;
@@ -230,40 +290,30 @@ grid-template-rows: repeat(12,1fr);
 
 /* EXPERIENCES**/
 .cv-experience{
-    overflow-y: auto;
     grid-column: 2;
-    grid-row: 1 / span 5;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(12,1fr);
-    row-gap: 10px;
-}
-
-.experience-jobtitle{
-display: grid;
-grid-template-columns: 1fr 1fr;
-
+    grid-row: 1 / span 4;
 }
 
 
 /* EDUCATION**/
 .cv-education{
-    overflow-y: auto ;
     grid-column: 2;
-  grid-row: 6 / span 4;
+  grid-row: 5 / span 3;
 }
+
 
 /* CERTIFICATES AND AWARDS**/
 .cv-certification{
-    overflow-y:auto ;
     grid-column: 2;
-    grid-row:  10 / span 4;
+    grid-row:  8 / span 4;
 }
+
+
 
 /* REFERENCES**/
 .cv-references{
     grid-column: 2;
-    grid-row: 14 / span 5;
+    grid-row: 11 / span 3;
     overflow-y: auto;
 
   }
